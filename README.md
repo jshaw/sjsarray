@@ -1,4 +1,4 @@
-# Arduino Array Library
+# SJSArray
 
 A bounds-safe wrapper for raw C++ arrays that adds utility functions useful for sensor data and general Arduino sketches. Originally by Alexander Brevig; updated and extended to work with modern Arduino IDE (1.6+).
 
@@ -36,7 +36,7 @@ The library is most valuable on AVR boards where `std::array` and `std::vector` 
 
 1. Open the Arduino IDE
 2. Go to **Sketch → Include Library → Manage Libraries...**
-3. Search for **Array**
+3. Search for **SJSArray**
 4. Click **Install**
 
 ---
