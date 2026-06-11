@@ -1,6 +1,17 @@
 # Changelog
 
-All notable changes to the Arduino Array library are documented here.
+All notable changes to the SJSArray library are documented here.
+
+---
+
+## [1.5.0] — 2026-06-11
+
+### Changed
+- **Breaking:** library renamed `Array` → `SJSArray` for the Arduino Library Manager (the generic `Array` name risked collisions).
+- **Breaking:** header renamed `Array.h` → `SJSArray.h`. Update sketches from `#include <Array.h>` to `#include <SJSArray.h>`.
+- **Breaking:** class renamed `Array<type>` → `SJSArray<type>`. Update declarations accordingly.
+- Examples folder renamed `Examples/` → `examples/` to match the Arduino Library Specification.
+- Include guard renamed `ARRAY_H` → `SJSARRAY_H`; `keywords.txt`, examples, tests, and README updated for the new names.
 
 ---
 

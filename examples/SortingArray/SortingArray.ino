@@ -1,9 +1,9 @@
-#include <Array.h>
+#include <SJSArray.h>
 
 const byte SIZE = 8;
 int raw[SIZE] = {64, 25, 12, 22, 11, 90, 3, 47};
 
-void printArray(Array<int>& arr) {
+void printArray(SJSArray<int>& arr) {
   for (int v : arr) {
     Serial.print(v);
     Serial.print(" ");
@@ -24,7 +24,7 @@ void setup() {
   // Simple and safe. Best for small arrays or nearly-sorted data.
   // Uses no extra memory — always safe on Uno and other AVR boards.
   resetArray(raw, original, SIZE);
-  Array<int> arr(raw, SIZE);
+  SJSArray<int> arr(raw, SIZE);
 
   Serial.print("Original:              "); printArray(arr);
 
@@ -65,7 +65,7 @@ void setup() {
   // ── Sorting strings ────────────────────────────────────────────────────────
   // Use Arduino's String class (not raw char*) for alphabetical sorting.
   String words[5] = {"Zebra", "Apple", "Mango", "Cherry", "Banana"};
-  Array<String> strArr(words, 5);
+  SJSArray<String> strArr(words, 5);
 
   Serial.print("Strings original:      ");
   for (String s : strArr) { Serial.print(s); Serial.print(" "); }

@@ -52,7 +52,7 @@ The library is most valuable on AVR boards where `std::array` and `std::vector` 
 ### Manual folder install
 
 1. Download or clone this repository
-2. Copy the `Array` folder into your Arduino libraries directory:
+2. Copy the `SJSArray` folder into your Arduino libraries directory:
    - **macOS / Linux:** `~/Documents/Arduino/libraries/`
    - **Windows:** `Documents\Arduino\libraries\`
 3. Restart the Arduino IDE
@@ -62,7 +62,7 @@ The library is most valuable on AVR boards where `std::array` and `std::vector` 
 Once installed, add to any sketch with:
 
 ```cpp
-#include <Array.h>
+#include <SJSArray.h>
 ```
 
 ---
@@ -70,10 +70,10 @@ Once installed, add to any sketch with:
 ## Quick start
 
 ```cpp
-#include <Array.h>
+#include <SJSArray.h>
 
 int raw[5] = {3, 1, 4, 1, 5};
-Array<int> arr(raw, 5);
+SJSArray<int> arr(raw, 5);
 
 void setup() {
   Serial.begin(9600);
@@ -93,7 +93,7 @@ void setup() {
 ### Construction
 
 ```cpp
-Array<datatype> name(rawArray, size);
+SJSArray<datatype> name(rawArray, size);
 ```
 
 | Parameter | Description |
@@ -101,7 +101,7 @@ Array<datatype> name(rawArray, size);
 | `rawArray` | Pointer to an existing C array |
 | `size`     | Number of elements |
 
-The Array object does **not** copy the data — it wraps the original array in place.
+The SJSArray object does **not** copy the data — it wraps the original array in place.
 
 ---
 
@@ -132,7 +132,7 @@ int hiAt = arr.getMaxIndex();
 ---
 
 ### `getSum()`
-Returns the sum of all elements. Use a type wide enough to hold the total without overflow (e.g., `Array<long>` if your values are large).
+Returns the sum of all elements. Use a type wide enough to hold the total without overflow (e.g., `SJSArray<long>` if your values are large).
 ```cpp
 long total = arr.getSum();
 ```

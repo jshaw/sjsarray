@@ -1,4 +1,4 @@
-Array	KEYWORD1
+SJSArray	KEYWORD1
 size	KEYWORD2
 getMin	KEYWORD2
 getMinIndex	KEYWORD2

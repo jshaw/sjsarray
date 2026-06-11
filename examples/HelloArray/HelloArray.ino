@@ -1,8 +1,8 @@
-#include <Array.h>
+#include <SJSArray.h>
 
 const byte SIZE = 10;
 int rawArray[SIZE] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
-Array<int> arr = Array<int>(rawArray, SIZE);
+SJSArray<int> arr = SJSArray<int>(rawArray, SIZE);
 
 void setup() {
   Serial.begin(9600);

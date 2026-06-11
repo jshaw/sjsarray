@@ -1,6 +1,6 @@
 /*
 ||
-|| @file Array.h
+|| @file SJSArray.h
 || @version 1.4
 || @author Alexander Brevig (original, arduino.cc/playground/Code/Array)
 || @author Jordan Shaw (forked 2015, maintained 2015–2026, studiojordanshaw.com)
@@ -28,15 +28,15 @@
 ||
 */
 
-#ifndef ARRAY_H
-#define ARRAY_H
+#ifndef SJSARRAY_H
+#define SJSARRAY_H
 
 #include <Arduino.h>
 
 template<typename type>
-class Array {
+class SJSArray {
     public:
-        Array(type* newArray, int newSize) : array(newArray), arraySize(newSize) {}
+        SJSArray(type* newArray, int newSize) : array(newArray), arraySize(newSize) {}
 
         // Returns the number of elements in the array.
         int size() const {
