@@ -4,4 +4,12 @@ getMin	KEYWORD2
 getMinIndex	KEYWORD2
 getMax	KEYWORD2
 getMaxIndex	KEYWORD2
+getSum	KEYWORD2
 getAverage	KEYWORD2
+contains	KEYWORD2
+indexOf	KEYWORD2
+fill	KEYWORD2
+sort	KEYWORD2
+bubbleSort	KEYWORD2
+quickSort	KEYWORD2
+mergeSort	KEYWORD2

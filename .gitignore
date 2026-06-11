@@ -1,0 +1,14 @@
+# Arduino build artifacts
+applet/
+build/
+*.elf
+*.hex
+*.eep
+*.o
+*.a
+
+# macOS
+.DS_Store
+
+# Test binary
+tests/test_array
