@@ -4,6 +4,13 @@ All notable changes to the SJSArray library are documented here.
 
 ---
 
+## [1.5.1] — 2026-06-12
+
+### Changed
+- `library.properties` author field now lists Jordan Shaw (current author/maintainer). Alexander Brevig remains credited as the original author in the source header and README.
+
+---
+
 ## [1.5.0] — 2026-06-11
 
 ### Changed
